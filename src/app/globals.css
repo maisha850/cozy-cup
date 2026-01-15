@@ -13,5 +13,9 @@
   @apply px-8 py-4 bg-orange-300 text-primary rounded-full font-semibold 
 }
 .btn-primary:hover{
-  @apply bg-[#1E150F] px-8 py-4  text-orange-300 rounded-full font-semibold border 
+  @apply shadow-orange-700/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  shadow-[0_0_35px_10px_rgba(168,85,247,0.8)]
+}
+.text-title{
+  @apply uppercase tracking-[0.3em] text-orange-300 text-sm font-semibold mb-5
 }

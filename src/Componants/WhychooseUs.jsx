@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className="text-sm tracking-widest text-yellow-600 mb-2">
+          <p className="text-title">
             WHY CHOOSE US
           </p>
 

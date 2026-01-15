@@ -22,9 +22,9 @@ const Navbar = () => {
 
   return (
     <header
-      className={`w-full z-50 transition-all duration-300 ${
+      className={`max-w-screen z-50 transition-all duration-300 ${
         isSticky
-          ? "fixed top-0 bg-primary shadow-md"
+          ? "fixed top-0 bg-black/80 shadow-md"
           : "absolute top-0 bg-transparent"
       }`}
     >
