@@ -39,7 +39,9 @@ const Hero = () => {
         <div className="flex  gap-4 justify-center">
           <Link
             href="/menu"
-            className="btn-primary"
+            className="inline-block  bg-orange-300 text-primary font-semibold px-5 py-4 rounded-full 
+          shadow-[0_0_15px_2px_rgba(255,199,0,0.4)] hover:shadow-[0_0_25px_5px_rgba(255,199,0,0.7)] 
+          transition-all duration-300"
           >
             View Menu
           </Link>

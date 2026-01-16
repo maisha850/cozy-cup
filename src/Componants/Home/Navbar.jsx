@@ -22,15 +22,15 @@ const Navbar = () => {
 
   return (
     <header
-      className={`max-w-screen z-50 transition-all duration-300 ${
+      className={`w-full z-50 transition-all duration-300 ${
         isSticky
-          ? "fixed top-0 bg-black/80 shadow-md"
+          ? "fixed top-0  shadow-md"
           : "absolute top-0 bg-transparent"
       }`}
     >
       {/* Inner container */}
       <nav
-        className={`max-w-7xl mx-auto px-6 py-1 flex items-center justify-between transition-all duration-300 ${
+        className={`max-w-7xl mx-auto px-6 py-0 flex items-center justify-between transition-all duration-300 ${
           isSticky ? "rounded-none" : "rounded-full"
         }`}
       >
@@ -50,14 +50,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link href="/reservation" className="hover:text-secondary transition">
+              Reservation
+            </Link>
+          </li>
+          <li>
             <Link href="/login" className="hover:text-secondary transition">
               Login
             </Link>
           </li>
           <li>
-            <Link href="/add-item" className="btn-primary ">
-              Add Item
-            </Link>
+           
           </li>
         </ul>
 
@@ -79,16 +82,13 @@ const Navbar = () => {
           <Link href="/menu" onClick={() => setIsOpen(false)} className="block">
             Menu
           </Link>
+          <Link href="/reservation" onClick={() => setIsOpen(false)} className="block">
+            Reservation
+          </Link>
           <Link href="/login" onClick={() => setIsOpen(false)} className="block">
             Login
           </Link>
-          <Link
-            href="/add-item"
-            onClick={() => setIsOpen(false)}
-            className="btn-primary "
-          >
-            Add Item
-          </Link>
+        
         </div>
       )}
     </header>

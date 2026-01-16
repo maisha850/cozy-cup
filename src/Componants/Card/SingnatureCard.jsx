@@ -10,6 +10,7 @@ const SignatureCard = ({ item, reverse }) => {
         reverse ? "flex-row-reverse" : "flex-row"
       }`}
     >
+      
       {/* Decorative curved line */}
       <div
         className={`absolute top-1/2 w-full h-[2px] ${

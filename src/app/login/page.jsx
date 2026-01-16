@@ -3,7 +3,7 @@ import React from 'react';
 
 const LogIn = () => {
     return (
-        <div className=''>
+        <div className='pb-24'>
             {/* Background Image */}
  <section
       id=""
@@ -11,7 +11,7 @@ const LogIn = () => {
     >
      
  <h3 className='text-6xl absolute font-bold  text-orange-300 z-20 pt-40 uppercase'>Log In</h3>
-    <div className='absolute '>
+    <div className=' '>
               <LoginPage></LoginPage>
           </div>
     </section>

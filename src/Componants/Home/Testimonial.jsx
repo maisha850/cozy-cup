@@ -67,7 +67,7 @@ export default function Testimonial() {
     );
 
   return (
-    <section className="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden">
+    <section className="relative my-24 w-full min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -87,7 +87,7 @@ export default function Testimonial() {
         className="relative z-10 max-w-4xl px-6 text-center text-white"
       >
         <h3 className="text-title">Testimonials</h3>
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+        <h2 className="text-subTitle">
           What Our Customers Say
         </h2>
 

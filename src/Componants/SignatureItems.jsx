@@ -126,7 +126,7 @@ const SignatureItems = () => {
   };
 
   return (
-    <div className="relative px-6 py-20 overflow-hidden">
+    <div className="relative px-6 py-35  overflow-hidden">
 
       {/* Background */}
       <div
@@ -163,9 +163,12 @@ const SignatureItems = () => {
           transition={{ duration: 0.5 }}
           className="md:relative h-[550px] mx-auto max-w-4xl"
         >
-
+          <h3 className="text-title text-center">Featured Items</h3>
+<h3 className=" text-4xl md:text-5xl text-white font-bold leading-tight  text-center z-20">Our Signature Items</h3>
+<p className="text-center text-gray-100 ">Focuses on customer favorites.</p>
           {/* ODD card (Top-left) */}
-          <div className="md:absolute top-0 -left-40 w-[100%]">
+          <div className="md:absolute top-0 mt-20 -left-40 w-[100%]">
+            
             <SignatureCard
               item={allSignatureItems[index]}
               reverse={false}
@@ -174,7 +177,7 @@ const SignatureItems = () => {
 
           {/* EVEN card (Bottom-right) */}
           {allSignatureItems[index + 1] && (
-            <div className="md:absolute top-70  bottom-0 -right-40 w-[100%]">
+            <div className="md:absolute top-70 mt-10  bottom-0 -right-40 w-[100%]">
               <SignatureCard
                 item={allSignatureItems[index + 1]}
                 reverse={true}
