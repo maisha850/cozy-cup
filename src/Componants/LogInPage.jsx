@@ -45,18 +45,18 @@ const router = useRouter()
         
 
         {error && <p className="text-red-500 mb-3">{error}</p>}
-
+<label htmlFor="email">Email</label>
         <input
           type="email"
           placeholder="Email"
-          className="input mb-3 w-full"
+          className="input text-black mb-3 w-full"
           onChange={(e) => setEmail(e.target.value)}
         />
-
+<label htmlFor="password">Password</label>
         <input
           type="password"
           placeholder="Password"
-          className="input mb-4 w-full"
+          className="input text-black mb-4 w-full"
           onChange={(e) => setPassword(e.target.value)}
         />
 
