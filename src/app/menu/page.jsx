@@ -102,9 +102,12 @@ const Menu = async () => {
           }}
         />
         <div className="absolute inset-0 bg-black/60" />
-        <h3 className="text-6xl mt-30 font-bold text-orange-300 uppercase relative z-10">
-          Our Menu
+        <div className='text-center'>
+         <h3 className="md:text-7xl text-5xl  mt-30  font-bold text-orange-300 uppercase relative z-10">
+          our menu
         </h3>
+        <p className='text-white relative z-10 mt-3 px-4'>Explore our handcrafted drinks and delicious plates.</p>
+     </div>
       </section>
 
       {/* Client Component */}

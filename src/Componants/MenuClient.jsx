@@ -50,7 +50,7 @@ const MenuClient = ({ hotCoffee, coldCoffee, cakeBakery }) => {
             <button
               key={type}
               onClick={() => setActive(type)}
-              className={`px-6 py-2 text-lg font-semibold rounded-full transition ${
+              className={`m:px-6 px-4 py-2  md:text-lg text-sm  font-semibold rounded-full transition ${
                 active === type
                   ? "bg-orange-300 text-primary shadow-lg"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"

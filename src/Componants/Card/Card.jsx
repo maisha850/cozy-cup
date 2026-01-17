@@ -67,7 +67,7 @@ import React from "react";
 
 const Card = ({ coffee }) => {
   return (
-    <div className="flex  bg-[#131313]/90 backdrop-blur-md p-4 rounded-xl shadow-xl max-w-2xl border border-orange-500/10">
+    <div className="flex  bg-white/10  backdrop-blur-md p-4 rounded-xl shadow-xl max-w-2xl border border-orange-500/10">
 
       {/* Left Image */}
       <div className="w-[160px] h-[160px] flex-shrink-0 m-4 rounded-full overflow-hidden border-4 border-orange-300 shadow-lg">
@@ -105,7 +105,7 @@ const Card = ({ coffee }) => {
       <div className="flex justify-end">
            <Link
           href={`/menu/${coffee._id}`}
-          className="inline-block mt-4 bg-orange-300 text-primary font-semibold px-5 py-2 rounded-full 
+          className="inline-block mt-4 bg-orange-300 text-primary md:text-[16px] text-sm font-semibold px-3 py-1 md:px-5 md:py-2  rounded-full 
           shadow-[0_0_15px_2px_rgba(255,199,0,0.4)] hover:shadow-[0_0_25px_5px_rgba(255,199,0,0.7)] 
           transition-all duration-300"
         >

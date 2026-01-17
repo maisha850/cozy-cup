@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getSingleItems } from "@/actions/server/items";
 import React from "react";
+import Cart from "@/Componants/Cart";
 
 const ItemDetails = async ({ params }) => {
   const { id } = await params;
@@ -65,9 +66,7 @@ const ItemDetails = async ({ params }) => {
           <div className="border-b border-dotted border-gray-400 my-4"></div>
 
           {/* Add to Cart */}
-          <button className="btn-primary hover:bg-orange-700 text-white px-6 py-3 rounded-xl font-semibold text-lg shadow-md transition-all w-full md:w-auto">
-            Add to Cart
-          </button>
+        <Cart item={item}></Cart>
         </div>
       </div>
 

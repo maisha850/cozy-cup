@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, ShoppingCart, X } from "lucide-react";
 import Logo from "../Logo";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -19,12 +20,13 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+const pathName = usePathname()
+const isActive = (path)=>pathName === path
   return (
     <header
       className={`w-full z-50 transition-all duration-300 ${
         isSticky
-          ? "fixed top-0  shadow-md"
+          ? "fixed top-0 bg-white/10  backdrop-blur-md shadow-md"
           : "absolute top-0 bg-transparent"
       }`}
     >
@@ -40,22 +42,32 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 text-white font-medium">
           <li>
-            <Link href="/" className="hover:text-secondary transition">
+            <Link href="/"  className={`${isActive("/") ? "text-orange-300 font-bold" : "hover:text-secondary"} transition`}>
               Home
             </Link>
           </li>
           <li>
-            <Link href="/menu" className="hover:text-secondary transition">
+            <Link href="/about"       className={`${isActive("/about") ? "text-orange-300 font-bold" : "hover:text-secondary"} transition`}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/menu"  className={`${isActive("/menu") ? "text-orange-300 font-bold" : "hover:text-secondary"} transition`}>
               Menu
             </Link>
           </li>
           <li>
-            <Link href="/reservation" className="hover:text-secondary transition">
+            <Link href="/reservation"   className={`${isActive("/reservation") ? "text-orange-300 font-bold" : "hover:text-secondary"} transition`}>
               Reservation
             </Link>
           </li>
           <li>
-            <Link href="/login" className="hover:text-secondary transition">
+            <Link href="/cart"  className={`${isActive("/cart") ? "text-orange-300 font-bold" : "hover:text-secondary"} transition`}>
+              <ShoppingCart></ShoppingCart>
+            </Link>
+          </li>
+          <li>
+            <Link href="/login"   className={`${isActive("/login") ? "text-orange-300 font-bold" : "hover:text-secondary"} transition`}>
               Login
             </Link>
           </li>
@@ -75,7 +87,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-primary text-white px-6 py-6 space-y-4 shadow-lg">
+        <div className="md:hidden bg-black/30  backdrop-blur-md  text-white px-6 py-6 space-y-4 shadow-lg">
           <Link href="/" onClick={() => setIsOpen(false)} className="block">
             Home
           </Link>

@@ -95,7 +95,7 @@ export default function Testimonial() {
           {/* Left Arrow */}
           <button
             onClick={prev}
-            className="absolute left-0 md:-left-16 p-3 rounded-full bg-white/10 hover:bg-white/20 transition"
+            className="absolute left-0 top-10 md:top-0 md:-left-16 p-3 rounded-full bg-white/10 hover:bg-white/20 transition"
           >
             <ChevronLeft size={28} />
           </button>
@@ -120,7 +120,7 @@ export default function Testimonial() {
                 />
               </div>
 
-              <p className="text-lg md:text-xl text-gray-200 italic leading-relaxed mb-6">
+              <p className="text-sm md:text-xl text-gray-200 italic leading-relaxed mb-6">
                 “{testimonials[index].quote}”
               </p>
 
@@ -136,7 +136,7 @@ export default function Testimonial() {
           {/* Right Arrow */}
           <button
             onClick={next}
-            className="absolute right-0 md:-right-16 p-3 rounded-full bg-white/10 hover:bg-white/20 transition"
+            className="absolute right-0 top-10 md:top-0 md:-right-16 p-3 rounded-full bg-white/10 hover:bg-white/20 transition"
           >
             <ChevronRight size={28} />
           </button>

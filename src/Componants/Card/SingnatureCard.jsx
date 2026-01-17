@@ -19,7 +19,7 @@ const SignatureCard = ({ item, reverse }) => {
       ></div>
 
       {/* Image Wrapper with Golden Rings */}
-      <div className="relative w-[230px] h-[230px] flex-shrink-0">
+      <div className="relative md:w-[230px] md:h-[230px] w-[150px] h-[150px] flex-shrink-0">
         <div className="absolute inset-0 rounded-full border-[2px] border-yellow-500/60"></div>
         <div className="absolute -inset-3 rounded-full border-[1px] border-yellow-500/30"></div>
 
@@ -34,7 +34,7 @@ const SignatureCard = ({ item, reverse }) => {
 
       {/* Content Card */}
       <div className="bg-[#131313]/90 backdrop-blur-md p-6 rounded-xl shadow-xl max-w-md border border-orange-500/10">
-        <h3 className="text-2xl font-bold text-orange-300 uppercase tracking-wide">
+        <h3 className="md:text-2xl font-bold text-orange-300 uppercase tracking-wide">
           {item.name}
         </h3>
 
@@ -48,7 +48,7 @@ const SignatureCard = ({ item, reverse }) => {
       <div className="flex justify-end">
           <Link
           href={`/menu/${item.id}`}
-          className="inline-block mt-4 bg-orange-300 text-primary font-semibold px-5 py-2 rounded-full 
+          className="inline-block mt-4 bg-orange-300 text-primary md:text-[16px] text-sm font-semibold px-3 py-1 md:px-5 md:py-2 rounded-full 
           shadow-[0_0_15px_2px_rgba(255,199,0,0.4)] hover:shadow-[0_0_25px_5px_rgba(255,199,0,0.7)] 
           transition-all duration-300"
         >

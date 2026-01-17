@@ -21,7 +21,7 @@ toast.success('Subscribed')
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/90" />
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -33,7 +33,7 @@ toast.success('Subscribed')
               <h3 className="text-lg font-bold mb-6 uppercase">Information</h3>
         <ul className="space-y-3 text-sm text-gray-300">
             <li><Link href={'/'}>Home</Link></li>
-            <li><Link href={'/'}>About us</Link></li>
+            <li><Link href={'/about'}>About us</Link></li>
 
             <li><Link href={'/menu'}>Menu</Link></li>
             <li><Link href={'/reservation'}>Reservation</Link></li>

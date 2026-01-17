@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const WhyChooseUs = () => {
   return (
-    <section className="w-full py-24   px-6 md:px-20 text-white relative overflow-hidden">
+    <section className="w-full py-24   px-8 md:px-20 text-white relative overflow-hidden">
       
       {/* LEFT CONTENT */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 justify-between items-center">

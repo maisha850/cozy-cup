@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
-import logo from '../../public/assets/Brown_Flat_Illustrative_Cafe_Coffee_Logo-removebg-preview.png'
+
+import Link from 'next/link';
 
 const Logo = () => {
     return (
-        <div className=''>
-            <Image  src={logo} width={80} height={80} alt=''></Image>
-        </div>
+        <Link href={'/'} className=''>
+            <Image  src={'/favicon.ico'} width={80} height={80} alt='cozy-cup'></Image>
+        </Link>
     );
 };
 

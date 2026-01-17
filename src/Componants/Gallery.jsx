@@ -24,8 +24,8 @@ const galleryImages = [
   },
   {
     src: "https://images.unsplash.com/photo-1625242662341-5e92c5101338?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29sZCUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D",
-    title: "Morning Rituals",
-    desc: "Start your day the right way.",
+    title: "Refreshing",
+    desc: "Refresh your soul with cold coffee",
     span: "md:col-span-4",
   },
   {
@@ -42,7 +42,7 @@ const galleryImages = [
   },
   {
     src: "https://images.unsplash.com/photo-1565788049436-bc97046eff42?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNoZWVzZWNha2V8ZW58MHx8MHx8fDA%3D",
-    title: "Barista Art",
+    title: "Crafted Snacks",
     desc: "Crafted with passion and precision.",
     span: "md:col-span-3",
   },
@@ -61,10 +61,10 @@ export default function GalleryAmbience() {
           viewport={{ once: true }}
           className="mb-14 "
         >
-          <h2 className="text-title text-center">
+          <h2 className="text-title text-center ">
             Gallery & Ambience
           </h2>
-          <p className="text-subTitle text-center">
+          <p className="text-subTitle text-center md:px-0 px-8">
        Where Flavor Meets Art
           </p>
         </motion.div>

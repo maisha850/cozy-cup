@@ -1,6 +1,7 @@
 import Gallery from "@/Componants/Gallery";
+import BaristaTeam from "@/Componants/Home/BaristaTeam";
 import Hero from "@/Componants/Home/Hero";
-import Location from "@/Componants/Home/Location";
+
 import OurStory from "@/Componants/Home/OurStory";
 import Testimonial from "@/Componants/Home/Testimonial";
 import SignatureItems from "@/Componants/SignatureItems";
@@ -16,7 +17,7 @@ export default function Home() {
 <WhyChooseUs></WhyChooseUs>
 <Gallery></Gallery>
 <Testimonial></Testimonial>
-<Location></Location>
+<BaristaTeam></BaristaTeam>
 
 </div>
   );
