@@ -32,35 +32,20 @@ Cozy Cup is a modern, fully responsive café website built with Next.js, showcas
 ## List of Implemented Features
 
 - Fully responsive layout optimized for mobile, tablet, and desktop
-- 
-- Smooth animations and transitions using Framer Motion and CSS
-- 
-- Landing page with full-width hero section
-- 
+- Smooth animations and transitions using Framer Motion and CSS 
+- Landing page with full-width hero section 
 - Featured items displayed on the homepage
-- 
 - Short café story section on the homepage
-- 
-- “Why Choose Us” section highlighting café strengths
-- 
+- “Why Choose Us” section highlighting café strengths 
 - Customer testimonials section
-- 
 - Gallery section showcasing food and café photos
-- 
 - Baristas showcase section with staff images
-- 
 - Menu page displaying all menu items
-- 
 - About page describing Cozy Cup café
-- 
 - Reservation page with booking form
-- 
 - Shopping cart page for managing added items
-
 - Item quantity update and removal options
-- 
 - Add-to-cart interaction connected to cart page
-- 
 - Dynamic routing using Next.js App Router
 
 
