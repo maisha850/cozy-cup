@@ -45,5 +45,5 @@ body {
   @apply uppercase tracking-[0.3em] text-orange-300 text-sm font-semibold mb-4
 }
 .text-subTitle{
-  @apply text-4xl md:text-5xl font-bold text-white leading-tight mb-6 px-8 md:px-0
+  @apply text-3xl md:text-5xl font-bold text-white leading-tight mb-6 
 }

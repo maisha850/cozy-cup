@@ -125,14 +125,14 @@ const SignatureItems = () => {
       {/* Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 md:top-1/2 top-125 -translate-y-1/2 z-20 bg-white/20 text-orange-300 p-4 rounded-full shadow-lg hover:bg-yellow-500 transition"
+        className="absolute left-2 md:top-1/2 top-125 -translate-y-1/2 z-20 bg-white/20 text-orange-300 p-4 rounded-full shadow-lg hover:opacity-80 transition"
       >
         ❮
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-2 md:top-1/2 top-125 -translate-y-1/2 z-20 bg-white/20 text-orange-300 p-4 rounded-full shadow-lg hover:opacity-90 transition"
+        className="absolute right-2 md:top-1/2 top-125 -translate-y-1/2 z-20 bg-white/20 text-orange-300 p-4 rounded-full shadow-lg hover:opacity-80 transition"
       >
         ❯
       </button>

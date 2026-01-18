@@ -48,7 +48,7 @@ const SignatureCard = ({ item, reverse }) => {
       <div className="flex justify-end">
           <Link
           href={`/menu/${item.id}`}
-          className="inline-block mt-4 bg-orange-300 text-primary md:text-[16px] text-sm font-semibold px-3 py-1 md:px-5 md:py-2 rounded-full 
+          className="inline-block mt-4 bg-orange-300 text-primary md:text-[16px] text-sm font-semibold px-1 py-1 md:px-5 md:py-2 rounded-full 
           shadow-[0_0_15px_2px_rgba(255,199,0,0.4)] hover:shadow-[0_0_25px_5px_rgba(255,199,0,0.7)] 
           transition-all duration-300"
         >

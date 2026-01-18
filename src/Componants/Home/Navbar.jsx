@@ -88,16 +88,22 @@ const isActive = (path)=>pathName === path
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-black/30  backdrop-blur-md  text-white px-6 py-6 space-y-4 shadow-lg">
-          <Link href="/" onClick={() => setIsOpen(false)} className="block">
+          <Link href="/" onClick={() => setIsOpen(false)} className="block hover:text-secondary">
             Home
           </Link>
-          <Link href="/menu" onClick={() => setIsOpen(false)} className="block">
+          <Link href="/about" onClick={() => setIsOpen(false)} className="block hover:text-secondary">
+            about
+          </Link>
+          <Link href="/menu" onClick={() => setIsOpen(false)} className="block hover:text-secondary">
             Menu
           </Link>
-          <Link href="/reservation" onClick={() => setIsOpen(false)} className="block">
+          <Link href="/reservation" onClick={() => setIsOpen(false)} className="block hover:text-secondary">
             Reservation
           </Link>
-          <Link href="/login" onClick={() => setIsOpen(false)} className="block">
+          <Link href="/cart" onClick={() => setIsOpen(false)} className="block hover:text-secondary">
+          <ShoppingCart></ShoppingCart>
+          </Link>
+          <Link href="/login" onClick={() => setIsOpen(false)} className="block hover:text-secondary">
             Login
           </Link>
         
