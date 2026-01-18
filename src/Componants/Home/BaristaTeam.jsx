@@ -72,7 +72,7 @@ const BaristaTeam = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="grid grid-cols-1  md:grid-cols-3 gap-10 max-w-7xl mx-auto justify-center relative z-10"
+        className="grid grid-cols-1  md:grid-cols-3 gap-10 max-w-7xl mx-auto justify-items-center relative z-10"
       >
         {baristas.map((barista) => (
           <motion.div
@@ -80,7 +80,7 @@ const BaristaTeam = () => {
             variants={cardVariants}
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200 }}
-            className="group bg-white/10 mx-auto backdrop-blur-md p-4 md:w-full w-88 h-100 md:h-full rounded-3xl border border-white/20 shadow-lg hover:shadow-2xl"
+            className="group bg-white/10  backdrop-blur-md p-4 md:w-full w-88 h-100 md:h-full rounded-3xl border border-white/20 shadow-lg hover:shadow-2xl"
           >
             {/* Image */}
             <div className="w-full md:h-100 h-70 overflow-hidden rounded-3xl shadow-md">
